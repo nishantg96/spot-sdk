@@ -15,7 +15,7 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--host", default="0.0.0.0", help="Address to bind")
     parser.add_argument("--port", type=int, default=50051, help="Port for all services")
     parser.add_argument("--username", default="admin", help="Default username")
-    parser.add_argument("--password", default="insecure", help="Default password")
+    parser.add_argument("--password", default="password", help="Default password")
     parser.add_argument("--resource", action="append", default=["body"],
                         help="Lease resources to advertise")
     return parser.parse_args(argv)
